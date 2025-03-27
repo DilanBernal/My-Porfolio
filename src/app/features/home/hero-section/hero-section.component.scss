@@ -1,3 +1,5 @@
+$animation-time: 0.2s;
+$shadow-polaroid-color: rgb(105, 105, 105);
 :host {
   display: flex;
   flex-direction: column;
@@ -6,6 +8,9 @@
   width: 100%;
   text-align: center;
 }
+* {
+  animation: textEntry 0.3s;
+}
 ul {
   text-align: start;
 }
@@ -13,75 +18,131 @@ h1 {
   font-weight: bold;
   font-size: 4.5em;
   position: relative;
-  word-spacing: -0.5em;
-  letter-spacing: 0.2em;
+  // word-spacing: -0.5em;
+  letter-spacing: 0.05em;
 }
 h1::after {
   content: "|";
   animation: breathing 0.8s infinite alternate ease-in-out;
   position: absolute;
   font-weight: 300;
-  margin-left: -25px;
+  margin-left: -5px;
 }
-.hero-section-photo {
-  color: black;
-  display: flex;
-  min-width: 200px;
-  width: 260px;
-  height: 400px;
-  max-height: 40vh;
-  padding: 5px;
-  overflow: hidden;
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.social-link-container {
+  width: auto;
   position: relative;
-  padding-bottom: 70px;
-  animation: photoEntry 400ms ease-in-out;
-  box-shadow: 2px 2px 2px gray;
-  border-radius: 1px 10% 3px 1px;
-  perspective: 200em;
-  border: none;
-  background-color: white;
-  rotate: 4deg;
-  transition: all 0.5s;
 }
-.hero-section-photo::after {
+.social-link-container::before {
   content: "";
-  width: 100%;
-  background: lightgrey url("/images/My-Photo.png");
-  background-position: center;
-  border: 0.2px rgb(175, 175, 175) solid;
-  background-size: cover;
-  border-radius: 0 3.3% 0 0;
-}
-.hero-section-photo::before {
-  content: "Dilan Bernal";
-  font-weight: 600;
-  top: 88%;
-  transform: translate(-5%, 0%);
+  background-color: black;
   position: absolute;
-  width: 100%;
+  width: 20px;
+  height: 18px;
+  left: 20%;
+  top: -100%;
+  border: 5px solid whitesmoke;
+  border-radius: 20px;
+  clip-path: polygon(0% 0%, 100% 40%, 100% 100%, 0 100%);
 }
-.hero-section-photo:hover {
-  transform: scale(1.1);
-  rotate: 2deg;
-  box-shadow: 5px 5px 3px gray;
-  span {
-    animation: outShadow 0.4s forwards;
-    background: none;
-  }
-}
-.hero-section-photo span {
+.social-link-container::after {
+  content: "";
+  background-color: black;
   position: absolute;
-  right: 0;
-  animation: inShadow 0.4s forwards;
-  top: 0;
-  width: 100%;
-  background: radial-gradient(
-    circle at 200% -60%,
-    rgba(28, 28, 28, 1) 10%,
-    transparent 80%
+  width: 20px;
+  height: 18px;
+  right: 20%;
+  top: -100%;
+  border: 5px solid whitesmoke;
+  clip-path: polygon(0% 40%, 100% 0%, 100% 100%, 0 100%);
+  border-radius: 20px;
+}
+.social-link {
+  width: auto;
+  width: 150px;
+  justify-content: center;
+  padding: 0.5em;
+  border-radius: 80px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  // border: 1px dotted rgba(188, 188, 188, 0.345);
+  // clip-path: polygon(
+  //   0% 0%,
+  //   15% 23%,
+  //   21% 0%,
+  //   30% 25%,
+  //   40% 0%,
+  //   50% 30%,
+  //   60% 0%,
+  //   70% 25%,
+  //   80% 0%,
+  //   90% 26%,
+  //   100% 0%,
+  //   100% 100%,
+  //   86% 80%,
+  //   78% 100%,
+  //   67% 80%,
+  //   50% 100%,
+  //   0% 100%
+  // );
+
+  clip-path: polygon(
+    0% 0%,
+    10% 25%,
+    /* Primer diente */ 20% 0%,
+    30% 25%,
+    /* Segundo diente */ 40% 0%,
+    50% 25%,
+    /* Tercer diente */ 60% 0%,
+    70% 25%,
+    /* Cuarto diente */ 80% 0%,
+    90% 25%,
+    /* Quinto diente */ 100% 0%,
+    100% 100%,
+    86% 75%,
+    /* Valle entre dientes inferiores */ 72% 100%,
+    58% 75%,
+    44% 100%,
+    30% 75%,
+    14% 100%,
+    0% 75%
   );
-  transition: 0.5s;
-  height: 100%;
+}
+.social-link-container-linkedin {
+  rotate: -20deg;
+  transform: translateY(100%);
+}
+.social-link-container-email {
+  rotate: 20deg;
+  transform: translateY(100%);
+}
+
+.social-link::after {
+  content: "0";
+  position: absolute;
+  left: -20%;
+}
+.social-links {
+  margin-top: 20%;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  width: 80%;
+}
+.social-linkedin {
+  background-color: #0a66c2;
+}
+.social-github {
+  background-color: #181717;
+}
+.social-mail {
+  background-color: #8b6179;
 }
 
 @keyframes breathing {
@@ -98,40 +159,6 @@ h1::after {
 
 @keyframes textEntry {
   0% {
-  }
-}
-
-@keyframes outShadow {
-  @for $i from 0 through 10 {
-    #{10% * $i} {
-      $opacity: 0.8 - ($i * 0.08);
-      background: radial-gradient(
-        circle at 200% -40%,
-        rgba(28, 28, 28, $opacity) 10%,
-        transparent 80%
-      );
-    }
-  }
-}
-
-@keyframes inShadow {
-  @for $i from 0 through 10 {
-    #{10% * $i} {
-      $opacity: 0.1 + ($i * 0.08);
-      background: radial-gradient(
-        circle at 200% -40%,
-        rgba(28, 28, 28, $opacity) 10%,
-        transparent 80%
-      );
-    }
-  }
-}
-
-@keyframes photoEntry {
-  0% {
-    rotate: -10deg;
-    box-shadow: 20px 20px 10px gray;
-    scale: 1.4;
-    transform: translate(100%, 20%);
+    translate: 10%;
   }
 }

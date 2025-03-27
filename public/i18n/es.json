@@ -1,16 +1,34 @@
 {
   "home": {
-    "hero-section": {
+    "heroSection": {
       "greeting1": "¡Hola!, yo soy un",
       "greeting2": "con experiencia en",
       "experiences": [
         "Desarrollo de aplicaciones web",
-        "Desarrollo de aplicaciones backend",
-        "Desarrollo de bases de datos"
-      ]
+        "Desarrollo de aplicaciones backend"
+      ],
+      "social": {
+        "linkedin": "Mi linkedin",
+        "github": "Mi GitHub",
+        "mail": "Mi correo"
+      }
     },
     "about": {
-      
+      "title": "Sobre mi",
+      "summary1": {
+        "description1": "Soy un estudiante de",
+        "description2": "pronto a graduarse de",
+        "description3": "con experiencia en desarrollo frontend con los frameworks:",
+        "description4": "desarrollo backend con los frameworks:",
+        "description5": "y desarrollo de bases de datos con:",
+        "description6": "Soy apasionado por la tecnología y siempre estoy buscando nuevos desafíos para mejorar mis habilidades.",
+        "connector1": "a nivel"
+      },
+      "summary2": {
+        "description1": "Desde pequeño me ha atraído la tecnología, siendo de las personas que le entregaba a los profesores los trabajos de primera, ayudando a mis compañeros y haciendo trabajo extra por entretenimiento",
+        "description2": "En mi adolecencia me empezaron a interesar las computadoras en sentido de hardware, por lo que en  mi familia siempre les terminaba ayudando con la tecnologia, sea con un programa, a comprar un equipo tecnologico o algo parecido, lo cual en ese tiempo me gustaba bastante",
+        "description3": "Para mi ultimo año en el colegio, teniamos de proyecto de grado hacer una aplicacion de cualquier tipo, y con mi equipo elegimos un videojuego, que termine programando en su mayoria con Unity y C#"
+      }
     }
   },
   "header": {
@@ -18,5 +36,74 @@
     "portfolio": "Portafolio",
     "contact": "Contacto"
   },
-  "position": "Ingeniero de sSoftware"
+  "myInfo": {
+    "university": {
+      "name" : "Uniempresarial",
+      "status": "actualmente en 5 semestre",
+      "extra": "Universidad de la Cámara de Comercio De Bogotá"
+    },
+    "position": "Ingeniero de Software",
+    "skills": {
+      "frontend": [
+        {
+          "name": "Angular",
+          "level": "Intermedio"
+        },
+        {
+          "name": "Vue",
+          "level": "Básico"
+        }
+      ],
+      "backend": [
+        {
+          "name": "Spring Boot",
+          "level": "Intermedio"
+        },
+        {
+          "name": "Asp.Net",
+          "level": "Básico"
+        },
+        {
+          "name": "Node.js",
+          "level": "Básico"
+        }
+      ],
+      "database": [
+        {
+          "name": "MySQL",
+          "level": "Intermedio"
+        },
+        {
+          "name": "SQL Server",
+          "level": "Intermedio"
+        },
+        {
+          "name": "MongoDB",
+          "level": "Básico"
+        }
+      ],
+      "programmingLanguages": [
+        {
+          "name": "Java",
+          "level": "Intermedio"
+        },
+        {
+          "name": "C#",
+          "level": "Básico"
+        },
+        {
+          "name": "JavaScript",
+          "level": "Intermedio"
+        },
+        {
+          "name": "TypeScript",
+          "level": "Intermedio"
+        },
+        {
+          "name": "HTML",
+          "level": "Intermedio"
+        }
+      ]
+    }
+  }
 }

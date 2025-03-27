@@ -1,1 +1,17 @@
-<article></article>
+<section class="container">
+  <h2 class="text-center">
+    {{ 'home.about.title' | translate }}
+  </h2>
+  <p>
+    {{ 'home.about.summary1.description1' | translate }} <strong>{{ 'myInfo.university.name' | translate}}</strong> | {{'myInfo.university.extra' | translate}} {{'myInfo.university.status' | translate}}
+    {{ 'home.about.summary1.description2' | translate }} {{ 'myInfo.position' | translate}},
+    {{ 'home.about.summary1.description3' | translate }} <ng-container *ngFor="let skill of frontendSkills; let last = last">
+      {{skill.name}} {{ 'home.about.summary1.connector1' | translate}} {{skill.level}}<span *ngIf="!last">, </span></ng-container>.
+  </p>
+  <p>
+    {{ 'home.about.summary2.description1' | translate }}. {{ 'home.about.summary2.description2' | translate }}. {{ 'home.about.summary2.description3' | translate}}.
+  </p>
+  <!-- <span *ngFor="let skill of frontendSkills.technology">
+    {{ skill }} hola
+  </span> -->
+</section>

@@ -1,14 +1,37 @@
-<article class="container mt-5 mb-5 animate__fadeInBottomLeft">
-  <h1 class="mt-5">Dilan Felipe <br> Bernal Castaño</h1>
-  <div class="row">
-    <p class="column">
-      {{ "home.hero-section.greeting1" | translate }}
-      {{ "position" | translate }}
-      {{ "home.hero-section.greeting2" | translate}} <br>
-      {{ "home.hero-section.experiences" | translate }}.
+<article class="container my-5">
+  <h1 class="mt-5">
+    Dilan Felipe <br />
+    Bernal Castaño
+  </h1>
+  <div class="row my-5">
+    <p class="col">
+      {{ "home.heroSection.greeting1" | translate }}
+      {{ "myInfo.position" | translate }}
+      {{ "home.heroSection.greeting2" | translate }} <br />
+      <ng-container *ngFor="let skill of skillNames; let last = last">
+        {{ skill }}<span *ngIf="!last">, </span> </ng-container
+      >.
     </p>
-    <a href=""></a>
   </div>
+  <section class="row social-links">
+    <span class="social-link-container social-link-container-linkedin">
+      <a href="https://co.linkedin.com/in/dilan-felipe-bernal-casta%C3%B1o-13795a302?trk=people-guest_people_search-card" target="_blank" class="social-link social-linkedin">
+        <i class="bi bi-linkedin"></i>
+        {{ "home.heroSection.social.linkedin" | translate }}
+      </a>
+    </span>
+    <span class="social-link-container">
+      <a href="https://www.github.com/DilanBernal28" target="_blank" class="social-link social-github">
+        <i class="bi bi-github"></i>
+        {{ "home.heroSection.social.github" | translate }}
+      </a>
+    </span>
+    <span class="social-link-container social-link-container-email">
+      <a href="mailto:dilanfbernalc@gmail.com" class="social-link social-mail">
+        <i class="bi bi-envelope-fill"></i>
+        {{ "home.heroSection.social.mail" | translate }}
+      </a>
+    </span>
+  </section>
   <span class="mx-auto my-5 hero-section-photo"><span></span></span>
 </article>
-<hr>

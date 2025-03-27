@@ -1,22 +1,107 @@
 {
   "home": {
-    "hero-section": {
-      "greeting1": "Hello!, I am a",
+    "heroSection": {
+      "greeting1": "Hi!, I am a",
       "greeting2": "with experience in",
       "experiences": [
-        "Web applications depelopment",
-        "Backend applications development"
-      ]
+        "Web application development",
+        "Backend application development"
+      ],
+      "social": {
+        "linkedin": "My Linkedin",
+        "github": "My GitHub",
+        "mail": "My Email"
+      }
     },
     "about": {
-      "title": "About me",
-      "description": "I am a software engineer with experience in web development, backend development and database development. I am passionate about technology and I am always looking for new challenges to improve my skills."
+      "title": "About Me",
+      "summary1": {
+        "description1": "I am a student of",
+        "description2": "soon to graduate from",
+        "description3": "with experience in frontend development with the frameworks:",
+        "description4": "backend development with the frameworks:",
+        "description5": "and database development with:",
+        "description6": "I am passionate about technology and always seeking new challenges to improve my skills.",
+        "connector1": "at a"
+      },
+      "summary2": {
+        "description1": "Since I was a child, I have been drawn to technology, always submitting assignments early, helping classmates, and doing extra work for fun."
+      }
     }
   },
-  "position": "Software Ingenier",
   "header": {
-    "about": "About me",
+    "about": "About Me",
     "portfolio": "Portfolio",
     "contact": "Contact"
+  },
+  "myInfo": {
+    "university": {
+      "name": "Uniempresarial",
+      "status": "actually in 5 semester",
+      "extra": "Bogotá Chamber of Commerce University"
+    },
+    "position": "Software Engineer",
+    "skills": {
+      "frontend": [
+        {
+          "name": "Angular",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Vue",
+          "level": "Basic"
+        }
+      ],
+      "backend": [
+        {
+          "name": "Spring Boot",
+          "level": "Intermediate"
+        },
+        {
+          "name": "ASP.NET",
+          "level": "Basic"
+        },
+        {
+          "name": "Node.js",
+          "level": "Basic"
+        }
+      ],
+      "database": [
+        {
+          "name": "MySQL",
+          "level": "Intermediate"
+        },
+        {
+          "name": "SQL Server",
+          "level": "Intermediate"
+        },
+        {
+          "name": "MongoDB",
+          "level": "Basic"
+        }
+      ],
+      "programmingLanguages": [
+        {
+          "name": "Java",
+          "level": "Intermediate"
+        },
+        {
+          "name": "C#",
+          "level": "Basic"
+        },
+        {
+          "name": "JavaScript",
+          "level": "Intermediate"
+        },
+        {
+          "name": "TypeScript",
+          "level": "Intermediate"
+        },
+        {
+          "name": "HTML",
+          "level": "Intermediate"
+        }
+      ]
+    }
   }
 }

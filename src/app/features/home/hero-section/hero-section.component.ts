@@ -6,15 +6,16 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   selector: 'hero-section',
   imports: [TranslateModule, CommonModule],
   templateUrl: './hero-section.component.html',
-  styleUrl: './hero-section.component.scss'
+  styleUrls: ['./hero-section.component.scss', './hero-section-photo.component.scss']
 })
 export class HeroSectionComponent implements OnInit {
-  skills: string [] = [];
+  skillNames: string [] = [];
   constructor(private translate: TranslateService) {}
   
   ngOnInit() {
-    this.translate.get('hero-section-experiences').subscribe((skills: string[]) => {
-      this.skills = skills;
+    this.translate.get('home.heroSection.experiences').subscribe((skills: string[]) => {
+      this.skillNames = skills;
+      console.log(skills);
     });
   }
 }
