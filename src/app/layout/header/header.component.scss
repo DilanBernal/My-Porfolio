@@ -1,5 +1,14 @@
 :host{
-  position: fixed;
+  margin: 5px;
+  position: sticky;
+  top: 0.5vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18vw;
+  max-height: 99vh;
+  border-radius: 15px;
 }
 li{
   list-style: none ;

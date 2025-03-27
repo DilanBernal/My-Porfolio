@@ -1,15 +1,19 @@
 {
-  "hero-section":{
-
-    "greeting1": "Hello!, I am a",
-    "greeting2": "i have experience in",
-    "experiences": [
-      "Web applications depelopment",
-      "Backend applications development",
-      "Databases development"
-    ]
+  "home": {
+    "hero-section": {
+      "greeting1": "Hello!, I am a",
+      "greeting2": "with experience in",
+      "experiences": [
+        "Web applications depelopment",
+        "Backend applications development"
+      ]
+    },
+    "about": {
+      "title": "About me",
+      "description": "I am a software engineer with experience in web development, backend development and database development. I am passionate about technology and I am always looking for new challenges to improve my skills."
+    }
   },
-  "position": "Software Developer",
+  "position": "Software Ingenier",
   "header": {
     "about": "About me",
     "portfolio": "Portfolio",

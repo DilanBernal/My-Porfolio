@@ -10,6 +10,7 @@ body{
   color: whitesmoke;
   font-family: JetBrains Mono, monospace;
   padding: 0;
+  overflow-x: hidden;
   margin: 0;
   background: #0f0c29;  /* fallback for old browsers */
   background: -webkit-linear-gradient($gradieng-angle, $gradient-color-1, $gradient-color-2, $gradient-color-3);  /* Chrome 10-25, Safari 5.1-6 */
@@ -18,5 +19,6 @@ body{
 *{
   box-sizing: border-box;
 }
-
-/* Importing Bootstrap SCSS file. */
+app-root{
+  display: flex;
+}
