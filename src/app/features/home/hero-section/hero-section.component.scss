@@ -1,0 +1,47 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+ul{
+  text-align: start;
+}
+h1{
+  font-weight: bold;
+  font-size: 4em;
+}
+.hero-section-photo{
+  color: black;
+  display: flex;
+  min-width: 200px;
+  width: 260px;
+  height: 400px;
+  max-height: 40vh;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  padding-bottom: 70px;
+  border-radius: 3px;
+  border: none;
+  background-color: whitesmoke;
+  rotate: 4deg;
+}
+.hero-section-photo::after{
+  content: '';
+  width: 100%;
+  border-radius: 3px;
+  background: lightgrey url('/images/My-Photo.png');
+  background-position: center;
+  border: 0.2px gray solid;
+  background-size: cover;
+}
+.hero-section-photo::before{
+  content: 'Dilan Bernal';
+  top: 88%;
+  transform: translate(-5%, 0%);
+  position: absolute;
+  width: 100%;
+}

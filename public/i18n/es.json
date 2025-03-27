@@ -1,0 +1,17 @@
+{
+  "hero-section": {
+    "greeting1": "¡Hola!, yo soy un",
+    "greeting2": "con experiencia en",
+    "experiences": [
+      "Desarrollo de aplicaciones web",
+      "Desarrollo de aplicaciones backend",
+      "Desarrollo de bases de datos"
+    ]
+  },
+  "header": {
+    "about": "Sobre mi",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "position": "Desarrollador de software"
+}

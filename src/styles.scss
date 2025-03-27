@@ -1,4 +1,22 @@
+@use 'bootstrap/scss/bootstrap';
+
+$gradient-color-1: #24243e 2%;
+$gradient-color-2: #302b63 30%;
+$gradient-color-3: #0f0c29  130%;
+$gradieng-angle: 70deg;
+
 body{
   background-color: black;
-  color: white;
+  color: whitesmoke;
+  font-family: JetBrains Mono, monospace;
+  padding: 0;
+  margin: 0;
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient($gradieng-angle, $gradient-color-1, $gradient-color-2, $gradient-color-3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient($gradieng-angle, $gradient-color-1, $gradient-color-2, $gradient-color-3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+*{
+  box-sizing: border-box;
+}
+
+/* Importing Bootstrap SCSS file. */
