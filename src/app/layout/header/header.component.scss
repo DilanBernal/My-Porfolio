@@ -5,10 +5,12 @@
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
-  justify-content: center;
   max-height: 99vh;
   border-radius: 15px;
   animation: left-entry 300ms ease-in-out;
+}
+ul{
+  margin: auto;
 }
 li{
   list-style: none ;
@@ -19,5 +21,11 @@ li{
   }
   80%{
     transform: translate(5%);
+  }
+}
+
+@media screen and (max-width:900px) {
+  :host{
+    position: fixed;
   }
 }

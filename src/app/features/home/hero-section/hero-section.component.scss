@@ -71,26 +71,6 @@ a {
   display: flex;
   position: relative;
   gap: 5px;
-  // border: 1px dotted rgba(188, 188, 188, 0.345);
-  // clip-path: polygon(
-  //   0% 0%,
-  //   15% 23%,
-  //   21% 0%,
-  //   30% 25%,
-  //   40% 0%,
-  //   50% 30%,
-  //   60% 0%,
-  //   70% 25%,
-  //   80% 0%,
-  //   90% 26%,
-  //   100% 0%,
-  //   100% 100%,
-  //   86% 80%,
-  //   78% 100%,
-  //   67% 80%,
-  //   50% 100%,
-  //   0% 100%
-  // );
   transition: all 0.2s ;
 
   clip-path: polygon(
@@ -197,5 +177,14 @@ a {
 @keyframes textEntry {
   0% {
     translate: 10%;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  :host{
+    height: 130vh;
+  }
+  .hero-section-photo-container{
+    width: 70%;
   }
 }

@@ -26,3 +26,9 @@ app-root{
   display: grid;
   grid-template-columns: 0.15fr 1fr;
 }
+
+@media screen and (max-width: 900px) {
+  app-root{
+    display: block;
+  }
+}
