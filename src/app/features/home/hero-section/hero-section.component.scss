@@ -91,6 +91,7 @@ a {
   //   50% 100%,
   //   0% 100%
   // );
+  transition: all 0.2s ;
 
   clip-path: polygon(
     0% 0%,
@@ -104,14 +105,50 @@ a {
     /* Cuarto diente */ 80% 0%,
     90% 25%,
     /* Quinto diente */ 100% 0%,
-    100% 100%,
-    86% 75%,
-    /* Valle entre dientes inferiores */ 72% 100%,
-    58% 75%,
-    44% 100%,
-    30% 75%,
-    14% 100%,
-    0% 75%
+    100% 70%,
+
+    90% 100%, 
+
+    80% 75%,
+    /* Valle entre dientes inferiores */ 70% 100%,
+
+    60% 75%,
+    50% 100%,
+    40% 75%,
+    30% 100%,
+    20% 75%,
+    10% 100%,
+    0% 70%
+  );
+}
+.social-link-container:hover >.social-link {
+  transition: all 0.2s ease-in-out;
+  clip-path: polygon(
+    0% 20%,
+    10% 45%,
+    /* Primer diente */ 20% 20%,
+    30% 45%,
+    /* Segundo diente */ 40% 20%,
+    50% 45%,
+    /* Tercer diente */ 60% 20%,
+    70% 45%,
+    /* Cuarto diente */ 80% 20%,
+    90% 45%,
+    /* Quinto diente */ 100% 20%,
+    100% 100%-45%,
+    
+    90% 100%-15%,
+
+    80% 60%,
+    /* Valle entre dientes inferiores */ 70% 100-15%,
+
+    60% 60%,
+    50% 100%-15%,
+    40% 60%,
+    30% 100%-15%,
+    20% 60%,
+    10% 100%-15%,
+    0% 60%
   );
 }
 .social-link-container-linkedin {
