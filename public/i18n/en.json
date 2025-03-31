@@ -21,11 +21,12 @@
         "description3": "with experience in frontend development with the frameworks:",
         "description4": "backend development with the frameworks:",
         "description5": "and database development with:",
-        "description6": "I am passionate about technology and always seeking new challenges to improve my skills.",
-        "connector1": "at a"
+        "description6": "I am passionate about technology and always seeking new challenges to improve my skills",
+        "connector1": "at",
+        "connector2": "level"
       },
       "summary2": {
-        "description1": "Since I was a child, I have been drawn to technology, always submitting assignments early, helping classmates, and doing extra work for fun."
+        "description1": "Since I was a child, I have been drawn to technology, always submitting assignments early, helping classmates, and doing extra work for fun"
       }
     }
   },
@@ -68,11 +69,7 @@
       ],
       "database": [
         {
-          "name": "MySQL",
-          "level": "Intermediate"
-        },
-        {
-          "name": "SQL Server",
+          "name": "MySQL and SQL Server",
           "level": "Intermediate"
         },
         {

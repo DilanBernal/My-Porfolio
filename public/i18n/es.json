@@ -14,32 +14,38 @@
       }
     },
     "about": {
-      "title": "Sobre mi",
+      "title": "Sobre mí",
       "summary1": {
         "description1": "Soy un estudiante de",
-        "description2": "pronto a graduarse de",
+        "description2": "pronto a graduarme de",
         "description3": "con experiencia en desarrollo frontend con los frameworks:",
         "description4": "desarrollo backend con los frameworks:",
         "description5": "y desarrollo de bases de datos con:",
-        "description6": "Soy apasionado por la tecnología y siempre estoy buscando nuevos desafíos para mejorar mis habilidades.",
-        "connector1": "a nivel"
+        "description6": "Soy apasionado por la tecnología y siempre estoy buscando nuevos desafíos para mejorar mis habilidades",
+        "connector1": "a nivel",
+        "connector2": ""
       },
       "summary2": {
         "description1": "Desde pequeño me ha atraído la tecnología, siendo de las personas que le entregaba a los profesores los trabajos de primera, ayudando a mis compañeros y haciendo trabajo extra por entretenimiento",
-        "description2": "En mi adolecencia me empezaron a interesar las computadoras en sentido de hardware, por lo que en  mi familia siempre les terminaba ayudando con la tecnologia, sea con un programa, a comprar un equipo tecnologico o algo parecido, lo cual en ese tiempo me gustaba bastante",
-        "description3": "Para mi ultimo año en el colegio, teniamos de proyecto de grado hacer una aplicacion de cualquier tipo, y con mi equipo elegimos un videojuego, que termine programando en su mayoria con Unity y C#"
+        "description2": "En mi adolescencia me empezaron a interesar las computadoras en sentido de hardware, por lo que en  mi familia siempre les terminaba ayudando con la tecnologia, sea con un programa, a comprar un equipo tecnologico o algo parecido, lo cual en ese tiempo me gustaba bastante",
+        "description3": "Para mi ultimo año en el colegio, teniamos de proyecto de grado hacer una aplicacion de cualquier tipo, y con mi equipo elegimos un videojuego, el cual terminé programando en su mayoria con Unity y C#"
+      },
+      "summary3": {
+        "description1": "Tras finalizar el bachillerato, ingresé a la carrera de Ingeniería de Software, en 2024 inicié mi semestre de coformación en la empresa EQL, donde participé en una propuesta de mejoras para la página web principal de la empresa",
+        "description2": "En el semestre siguiente de enfoque teórico, desarrollé para un trabajo universitario una aplicación web de comercio electrónico de gorras utilizando HTML puro, conectada a una API REST desarrollada en Spring Boot",
+        "description3": "Esta experiencia me permitió profundizar en el desarrollo web y la integración de sistemas backend. Tiempo después, decidí continuar el proyecto de manera individual, migrándolo de HTML puro a Angular y mejorando la API para hacerla más robusta y eficiente"
       }
     }
   },
   "header": {
-    "about": "Sobre mi",
+    "about": "Sobre mí",
     "portfolio": "Portafolio",
     "contact": "Contacto"
   },
   "myInfo": {
     "university": {
-      "name" : "Uniempresarial",
-      "status": "actualmente en 5 semestre",
+      "name": "Uniempresarial",
+      "status": "actualmente en quinto semestre",
       "extra": "Universidad de la Cámara de Comercio De Bogotá"
     },
     "position": "Ingeniero de Software",
@@ -51,6 +57,10 @@
         },
         {
           "name": "Vue",
+          "level": "Básico"
+        },
+        {
+          "name": "Flutter",
           "level": "Básico"
         }
       ],
@@ -70,11 +80,7 @@
       ],
       "database": [
         {
-          "name": "MySQL",
-          "level": "Intermedio"
-        },
-        {
-          "name": "SQL Server",
+          "name": "MySQL y SQL Server",
           "level": "Intermedio"
         },
         {
@@ -100,7 +106,7 @@
           "level": "Intermedio"
         },
         {
-          "name": "HTML",
+          "name": "HTML & CSS",
           "level": "Intermedio"
         }
       ]
