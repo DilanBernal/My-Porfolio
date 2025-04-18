@@ -1,12 +1,14 @@
+@use '../../variables.component.scss' as * ;
 :host{
+  @extend %container-box;
   margin: 5px;
-  position: sticky;
+  position: sticky !important;
   top: 0.5vh;
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
+  min-height: 98.8vh;
+  height: 99vh;
   max-height: 99vh;
-  border-radius: 15px;
   animation: left-entry 300ms ease-in-out;
 }
 ul{

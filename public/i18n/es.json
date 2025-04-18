@@ -1,113 +1,101 @@
 {
-  "home": {
-    "heroSection": {
-      "greeting1": "¡Hola!, yo soy un",
-      "greeting2": "con experiencia en",
-      "experiences": [
+  "HOME": {
+    "HEROSECTION": {
+      "GREETINGS": "¡Hola!, yo soy un {{ position }} con experiencia en",
+      "EXPERIENCES": [
         "Desarrollo de aplicaciones web",
         "Desarrollo de aplicaciones backend"
       ],
-      "social": {
-        "linkedin": "Mi linkedin",
-        "github": "Mi GitHub",
-        "mail": "Mi correo"
+      "SOCIAL": {
+        "LINKEDIN": "Mi linkedin",
+        "GITHUB": "Mi GitHub",
+        "MAIL": "Mi correo"
       }
     },
-    "about": {
-      "title": "Sobre mí",
-      "summary1": {
-        "description1": "Soy un estudiante de",
-        "description2": "pronto a graduarme de",
-        "description3": "con experiencia en desarrollo frontend con los frameworks:",
-        "description4": "desarrollo backend con los frameworks:",
-        "description5": "y desarrollo de bases de datos con:",
-        "description6": "Soy apasionado por la tecnología y siempre estoy buscando nuevos desafíos para mejorar mis habilidades",
-        "connector1": "a nivel",
-        "connector2": ""
+    "ABOUT": {
+      "TITLE": "Sobre mí",
+      "SUMMARY1": {
+        "DESCRIPTION": "Soy un estudiante de {{ university }} pronto a graduarme de {{ position }} con experiencia en desarrollo frontend con los frameworks: {{ frontend }}, desarrollo backend con los frameworks: {{ backend }} y desarrollo y manejo de bases de datos con: {{database}}. Soy apasionado por la tecnología y siempre estoy buscando nuevos desafíos para mejorar mis habilidades"
       },
-      "summary2": {
-        "description1": "Desde pequeño me ha atraído la tecnología, siendo de las personas que le entregaba a los profesores los trabajos de primera, ayudando a mis compañeros y haciendo trabajo extra por entretenimiento",
-        "description2": "En mi adolescencia me empezaron a interesar las computadoras en sentido de hardware, por lo que en  mi familia siempre les terminaba ayudando con la tecnologia, sea con un programa, a comprar un equipo tecnologico o algo parecido, lo cual en ese tiempo me gustaba bastante",
-        "description3": "Para mi ultimo año en el colegio, teniamos de proyecto de grado hacer una aplicacion de cualquier tipo, y con mi equipo elegimos un videojuego, el cual terminé programando en su mayoria con Unity y C#"
+      "SUMMARY2": {
+        "DESCRIPTION": "Desde pequeño me ha atraído la tecnología, siendo de las personas que le entregaba a los profesores los trabajos de primera, ayudando a mis compañeros y haciendo trabajo extra por entretenimiento. En mi adolescencia me empezaron a interesar las computadoras en sentido de hardware, por lo que en  mi familia siempre les terminaba ayudando con la tecnologia, sea con un programa, a comprar un equipo tecnologico o algo parecido, lo cual en ese tiempo me gustaba bastante. Para mi ultimo año en el colegio, teniamos de proyecto de grado hacer una aplicacion de cualquier tipo, y con mi equipo elegimos un videojuego, el cual terminé programando en su mayoria con Unity y C#"
       },
-      "summary3": {
-        "description1": "Tras finalizar el bachillerato, ingresé a la carrera de Ingeniería de Software, en 2024 inicié mi semestre de coformación en la empresa EQL, donde participé en una propuesta de mejoras para la página web principal de la empresa",
-        "description2": "En el semestre siguiente de enfoque teórico, desarrollé para un trabajo universitario una aplicación web de comercio electrónico de gorras utilizando HTML puro, conectada a una API REST desarrollada en Spring Boot",
-        "description3": "Esta experiencia me permitió profundizar en el desarrollo web y la integración de sistemas backend. Tiempo después, decidí continuar el proyecto de manera individual, migrándolo de HTML puro a Angular y mejorando la API para hacerla más robusta y eficiente"
+      "SUMMARY3": {
+        "DESCRIPTION": "Tras finalizar el bachillerato, ingresé a la carrera de Ingeniería de Software, en 2024 inicié mi semestre de coformación en la empresa EQL, donde participé en una propuesta de mejoras para la página web principal de la empresa. En el semestre siguiente de enfoque teórico, desarrollé para un trabajo universitario una aplicación web de comercio electrónico de gorras utilizando HTML puro, conectada a una API REST desarrollada en Spring Boot. Esta experiencia me permitió profundizar en el desarrollo web y la integración de sistemas backend. Tiempo después, decidí continuar el proyecto de manera individual, migrándolo de HTML puro a Angular y mejorando la API para hacerla más robusta y eficiente"
       }
     }
   },
-  "header": {
-    "about": "Sobre mí",
-    "portfolio": "Portafolio",
-    "contact": "Contacto"
+  "HEADER": {
+    "ABOUT": "Sobre mí",
+    "PORTFOLIO": "Portafolio",
+    "CONTACT": "Contacto"
   },
-  "myInfo": {
-    "university": {
-      "name": "Uniempresarial",
-      "status": "actualmente en quinto semestre",
-      "extra": "Universidad de la Cámara de Comercio De Bogotá"
+  "MY_INFO": {
+    "UNIVERSITY": {
+      "NAME": "Uniempresarial",
+      "STATUS": "actualmente en quinto semestre",
+      "EXTRA": "Universidad de la Cámara de Comercio De Bogotá"
     },
-    "position": "Ingeniero de Software",
-    "skills": {
-      "frontend": [
+    "POSITION": "Ingeniero de Software",
+    "SKILLS": {
+      "FRONTEND": [
         {
-          "name": "Angular",
-          "level": "Intermedio"
+          "NAME": "Angular",
+          "LEVEL": "Intermedio"
         },
         {
-          "name": "Vue",
-          "level": "Básico"
+          "NAME": "Vue",
+          "LEVEL": "Básico"
         },
         {
-          "name": "Flutter",
-          "level": "Básico"
+          "NAME": "Flutter",
+          "LEVEL": "Básico"
         }
       ],
-      "backend": [
+      "BACKEND": [
         {
-          "name": "Spring Boot",
-          "level": "Intermedio"
+          "NAME": "Spring Boot",
+          "LEVEL": "Intermedio"
         },
         {
-          "name": "Asp.Net",
-          "level": "Básico"
+          "NAME": "Asp.Net",
+          "LEVEL": "Básico"
         },
         {
-          "name": "Node.js",
-          "level": "Básico"
+          "NAME": "Node.js",
+          "LEVEL": "Básico"
         }
       ],
-      "database": [
+      "DATABASE": [
         {
-          "name": "MySQL y SQL Server",
-          "level": "Intermedio"
+          "NAME": "MySQL y SQL Server",
+          "LEVEL": "Intermedio"
         },
         {
-          "name": "MongoDB",
-          "level": "Básico"
+          "NAME": "MongoDB",
+          "LEVEL": "Básico"
         }
       ],
-      "programmingLanguages": [
+      "PROGRAMMING_LANGUAGES": [
         {
-          "name": "Java",
-          "level": "Intermedio"
+          "NAME": "Java",
+          "LEVEL": "Intermedio"
         },
         {
-          "name": "C#",
-          "level": "Básico"
+          "NAME": "C#",
+          "LEVEL": "Básico"
         },
         {
-          "name": "JavaScript",
-          "level": "Intermedio"
+          "NAME": "JavaScript",
+          "LEVEL": "Intermedio"
         },
         {
-          "name": "TypeScript",
-          "level": "Intermedio"
+          "NAME": "TypeScript",
+          "LEVEL": "Intermedio"
         },
         {
-          "name": "HTML & CSS",
-          "level": "Intermedio"
+          "NAME": "HTML & CSS",
+          "LEVEL": "Intermedio"
         }
       ]
     }

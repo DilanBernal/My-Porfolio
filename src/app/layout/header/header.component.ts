@@ -10,5 +10,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   constructor(private translate:TranslateService) {}
+
+  changeLanguage(lang: string):void{
+    this.translate.use(lang);
+  }
   
 }

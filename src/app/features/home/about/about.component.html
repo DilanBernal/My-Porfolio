@@ -1,17 +1,65 @@
 <section class="container">
   <h2 class="text-center">
-    {{ 'home.about.title' | translate }}
+    {{ "HOME.ABOUT.TITLE" | translate }}
   </h2>
   <p>
-    {{ 'home.about.summary1.description1' | translate }} <strong>{{ 'myInfo.university.name' | translate}}</strong> | {{'myInfo.university.extra' | translate}} {{'myInfo.university.status' | translate}}
-    {{ 'home.about.summary1.description2' | translate }} {{ 'myInfo.position' | translate}},
-    {{ 'home.about.summary1.description3' | translate }} <ng-container *ngFor="let skill of frontendSkills; let last = last">
-      {{skill.name}} {{ 'home.about.summary1.connector1' | translate}} {{skill.level}}<span *ngIf="!last">, </span></ng-container>.
+    {{
+      "HOME.ABOUT.SUMMARY1.DESCRIPTION"
+        | translate 
+          : {
+              position: "MY_INFO.POSITION" | translate,
+              university: "MY_INFO.UNIVERSITY.NAME" | translate,
+              frontend: frontendSkills.length
+            }
+    }}
+    <strong>{{ "MY_INFO.UNIVERSITY.NAME" | translate }}</strong> |
+    {{ "MY_INFO.UNIVERSITY.EXTRA" | translate }}
+    {{ "MY_INFO.UNIVERSITY.STATUS" | translate }}
+    {{ "HOME.ABOUT.SUMMARY1.DESCRIPTION2" | translate }}
+    {{ "MY_INFO.position" | translate }},
+    {{ "home.about.summary1.description3" | translate }}
+    <ng-container *ngFor="let skill of frontendSkills; let last = last">
+      {{ skill.name }} {{ "home.about.summary1.connector1" | translate }}
+      {{ skill.level
+      }}<ng-container *ngIf="actuallyLang == 'en'">{{
+        "home.about.summary1.connector2" | translate
+      }}</ng-container
+      ><ng-container *ngIf="!last">, </ng-container> </ng-container
+    >,
+    {{ "home.about.summary1.description4" | translate }}
+    <ng-container *ngFor="let skill of backendSkills; let last = last">
+      {{ skill.name }} {{ "home.about.summary1.connector1" | translate }}
+      {{ skill.level
+      }}<ng-container *ngIf="actuallyLang == 'en'">{{
+        "home.about.summary1.connector2" | translate
+      }}</ng-container
+      ><span *ngIf="!last">, </span>
+    </ng-container>
+    <ng-container *ngFor="let skill of databaseSkills; let last = last">
+      {{ skill.name }} {{ "home.about.summary1.connector1" | translate }}
+      {{ skill.level
+      }}<ng-container *ngIf="actuallyLang == 'en'">{{
+        "home.about.summary1.connector2" | translate
+      }}</ng-container
+      ><span *ngIf="!last">, </span></ng-container
+    >
+    <ng-container *ngFor="let skill of languageSkills; let last = last">
+      {{ skill.name }} {{ "home.about.summary1.connector1" | translate }}
+      {{ skill.level
+      }}<ng-container *ngIf="actuallyLang == 'en'">{{
+        "home.about.summary1.connector2" | translate
+      }}</ng-container
+      ><span *ngIf="!last">, </span></ng-container
+    >.
   </p>
   <p>
-    {{ 'home.about.summary2.description1' | translate }}. {{ 'home.about.summary2.description2' | translate }}. {{ 'home.about.summary2.description3' | translate}}.
+    {{ "home.about.summary2.description1" | translate }}.
+    {{ "home.about.summary2.description2" | translate }}.
+    {{ "home.about.summary2.description3" | translate }}.
   </p>
-  <!-- <span *ngFor="let skill of frontendSkills.technology">
-    {{ skill }} hola
-  </span> -->
+  <p>
+    {{ "home.about.summary3.description1" | translate }}.
+    {{ "home.about.summary3.description2" | translate }}.
+    {{ "home.about.summary3.description3" | translate }}.
+  </p>
 </section>

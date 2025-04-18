@@ -1,21 +1,20 @@
 {
-  "home": {
-    "heroSection": {
-      "greeting1": "Hi!, I am a",
-      "greeting2": "with experience in",
-      "experiences": [
+  "HOME": {
+    "HEROSECTION": {
+      "GREETINGS": "Hi!, I am a {{ position }} with experience in",
+      "EXPERIENCES": [
         "Web application development",
         "Backend application development"
       ],
-      "social": {
-        "linkedin": "My Linkedin",
-        "github": "My GitHub",
-        "mail": "My Email"
+      "SOCIAL": {
+        "LINKEDIN": "My Linkedin",
+        "GITHUB": "My GitHub",
+        "MAIL": "My Email"
       }
     },
-    "about": {
-      "title": "About Me",
-      "summary1": {
+    "ABOUT": {
+      "TITLE": "About Me",
+      "SUMMARY1": {
         "description1": "I am a student of",
         "description2": "soon to graduate from",
         "description3": "with experience in frontend development with the frameworks:",

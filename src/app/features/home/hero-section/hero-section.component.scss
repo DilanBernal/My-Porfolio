@@ -1,9 +1,12 @@
+@use '../../../variables.component.scss' as *;
 $animation-time: 0.2s;
 $shadow-polaroid-color: rgb(105, 105, 105);
+
 :host {
   display: flex;
+  margin-top: 2%;
   flex-direction: column;
-  height: 100vh;
+  height: 100vh !important;
   justify-content: center;
   width: 100%;
   text-align: center;
@@ -18,7 +21,6 @@ h1 {
   font-weight: bold;
   font-size: 4.5em;
   position: relative;
-  // word-spacing: -0.5em;
   letter-spacing: 0.05em;
 }
 h1::after {
@@ -33,134 +35,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-.social-link-container {
-  width: auto;
-  position: relative;
-}
-.social-link-container::before {
-  content: "";
-  background-color: black;
-  position: absolute;
-  width: 20px;
-  height: 18px;
-  left: 20%;
-  top: -100%;
-  border: 5px solid whitesmoke;
-  border-radius: 20px;
-  clip-path: polygon(0% 0%, 100% 40%, 100% 100%, 0 100%);
-}
-.social-link-container::after {
-  content: "";
-  background-color: black;
-  position: absolute;
-  width: 20px;
-  height: 18px;
-  right: 20%;
-  top: -100%;
-  border: 5px solid whitesmoke;
-  clip-path: polygon(0% 40%, 100% 0%, 100% 100%, 0 100%);
-  border-radius: 20px;
-}
-.social-link {
-  width: auto;
-  width: 150px;
-  justify-content: center;
-  padding: 0.5em;
-  border-radius: 80px;
-  margin: auto;
-  display: flex;
-  position: relative;
-  gap: 5px;
-  transition: all 0.2s ;
-
-  clip-path: polygon(
-    0% 0%,
-    10% 25%,
-    /* Primer diente */ 20% 0%,
-    30% 25%,
-    /* Segundo diente */ 40% 0%,
-    50% 25%,
-    /* Tercer diente */ 60% 0%,
-    70% 25%,
-    /* Cuarto diente */ 80% 0%,
-    90% 25%,
-    /* Quinto diente */ 100% 0%,
-    100% 70%,
-
-    90% 100%, 
-
-    80% 75%,
-    /* Valle entre dientes inferiores */ 70% 100%,
-
-    60% 75%,
-    50% 100%,
-    40% 75%,
-    30% 100%,
-    20% 75%,
-    10% 100%,
-    0% 70%
-  );
-}
-.social-link-container:hover >.social-link {
-  transition: all 0.2s ease-in-out;
-  clip-path: polygon(
-    0% 20%,
-    10% 45%,
-    /* Primer diente */ 20% 20%,
-    30% 45%,
-    /* Segundo diente */ 40% 20%,
-    50% 45%,
-    /* Tercer diente */ 60% 20%,
-    70% 45%,
-    /* Cuarto diente */ 80% 20%,
-    90% 45%,
-    /* Quinto diente */ 100% 20%,
-    100% 100%-45%,
-    
-    90% 100%-15%,
-
-    80% 60%,
-    /* Valle entre dientes inferiores */ 70% 100-15%,
-
-    60% 60%,
-    50% 100%-15%,
-    40% 60%,
-    30% 100%-15%,
-    20% 60%,
-    10% 100%-15%,
-    0% 60%
-  );
-}
-.social-link-container-linkedin {
-  rotate: -20deg;
-  transform: translateY(100%);
-}
-.social-link-container-email {
-  rotate: 20deg;
-  transform: translateY(100%);
-}
-
-.social-link::after {
-  content: "0";
-  position: absolute;
-  left: -20%;
-}
-.social-links {
-  margin-top: 20%;
-  justify-content: center;
-  margin: auto;
-  display: flex;
-  width: 80%;
-}
-.social-linkedin {
-  background-color: #0a66c2;
-}
-.social-github {
-  background-color: #181717;
-}
-.social-mail {
-  background-color: #8b6179;
-}
 
 @keyframes breathing {
   0% {
@@ -174,17 +48,12 @@ a {
   }
 }
 
-@keyframes textEntry {
-  0% {
-    translate: 10%;
-  }
-}
 
 @media screen and (max-height: 900px) {
-  :host{
+  :host {
     height: 130vh;
   }
-  .hero-section-photo-container{
+  .hero-section-photo-container {
     width: 70%;
   }
 }

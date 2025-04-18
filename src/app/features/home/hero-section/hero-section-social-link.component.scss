@@ -1,0 +1,115 @@
+.social-link-container {
+  width: auto;
+  position: relative;
+}
+.social-link-container::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  left: 20%;
+  top: -100%;
+  border: 5px solid whitesmoke;
+  border-radius: 20px;
+}
+.social-link-container::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  right: 20%;
+  top: -100%;
+  border: 5px solid whitesmoke;
+  border-radius: 20px;
+}
+.social-link {
+  width: auto;
+  width: 150px;
+  justify-content: center;
+  padding: 0.5em;
+  border-radius: 80px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  transition: all 0.2s;
+
+  clip-path: polygon(
+    0% 0%,
+    10% 25%,
+    20% 0%,
+    30% 25%,
+    40% 0%,
+    50% 25%,
+    60% 0%,
+    70% 25%,
+    80% 0%,
+    90% 25%,
+    100% 0%,
+    100% 70%,
+    90% 100%,
+    80% 75%,
+    70% 100%,
+    60% 75%,
+    50% 100%,
+    40% 75%,
+    30% 100%,
+    20% 75%,
+    10% 100%,
+    0% 70%
+  );
+}
+.social-link-container:hover > .social-link {
+  transition: all 0.2s ease-in-out;
+  clip-path: polygon(
+    0% 20%,
+    10% 45%,
+    20% 20%,
+    30% 45%,
+    40% 20%,
+    50% 45%,
+    60% 20%,
+    70% 45%,
+    80% 20%,
+    90% 45%,
+    100% 20%,
+    100% 100%-45%,
+    90% 100%-15%,
+    80% 60%,
+    70% 100-15%,
+    60% 60%,
+    50% 100%-15%,
+    40% 60%,
+    30% 100%-15%,
+    20% 60%,
+    10% 100%-15%,
+    0% 60%
+  );
+}
+.social-link-container-linkedin {
+  rotate: -20deg;
+  transform: translateY(100%);
+}
+.social-link-container-email {
+  rotate: 20deg;
+  transform: translateY(100%);
+}
+
+.social-links {
+  margin-top: 20%;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  width: 80%;
+}
+.social-linkedin {
+  background-color: #0a66c2;
+}
+.social-github {
+  background-color: #181717;
+}
+.social-mail {
+  background-color: #8b6179;
+}

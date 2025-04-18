@@ -1,6 +1,10 @@
+@use '../../../variables.component.scss' as *;
 :host{
-  background-color: black;
+  @extend %container-box;
   display: block;
+  margin-top: 10%;
+  margin-right: 6px;
+  padding: 60px 0;
 }
 h2{
   font-size: 3em;

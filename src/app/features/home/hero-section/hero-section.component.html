@@ -5,9 +5,9 @@
   </h1>
   <div class="row my-5">
     <p class="col">
-      {{ "home.heroSection.greeting1" | translate }}
-      {{ "myInfo.position" | translate }}
-      {{ "home.heroSection.greeting2" | translate }} <br />
+      {{ "HOME.HEROSECTION.GREETINGS" | translate: {position: ('MY_INFO.POSITION' | translate)} }}
+      <!-- {{ "myInfo.position" | translate }}
+      {{ "home.heroSection.greeting2" | translate }} <br /> -->
       <ng-container *ngFor="let skill of skillNames; let last = last">
         {{ skill }}<span *ngIf="!last">, </span> </ng-container
       >.
@@ -17,19 +17,19 @@
     <a href="https://co.linkedin.com/in/dilan-felipe-bernal-casta%C3%B1o-13795a302?trk=people-guest_people_search-card" class="social-link-container social-link-container-linkedin" target="_blank">
       <span class="social-link social-linkedin">
         <i class="bi bi-linkedin"></i>
-        {{ "home.heroSection.social.linkedin" | translate }}
+        {{ "HOME.HEROSECTION.SOCIAL.LINKEDIN" | translate }}
       </span>
     </a>
     <a href="https://www.github.com/DilanBernal" target="_blank" class="social-link-container">
       <span class="social-link social-github">
         <i class="bi bi-github"></i>
-        {{ "home.heroSection.social.github" | translate }}
+        {{ "HOME.HEROSECTION.SOCIAL.GITHUB" | translate }}
       </span>
     </a>
     <a href="mailto:dilanfbernalc@gmail.com" target="_blank" class="social-link-container social-link-container-email">
       <span  class="social-link social-mail">
         <i class="bi bi-envelope-fill"></i>
-        {{ "home.heroSection.social.mail" | translate }}
+        {{ "HOME.HEROSECTION.SOCIAL.MAIL" | translate }}
       </span>
     </a>
   </section>
